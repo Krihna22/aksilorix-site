@@ -911,47 +911,47 @@
     </section>
 
     <!-- ================= КОНТАКТЫ / ФОРМА ================= -->
-    <section id="contact" class="section">
-        <div class="container narrow">
-            <div class="section-head reveal">
-                <h2>Давайте начнём</h2>
-                <p class="muted">Оставьте контакты — пришлём вам план в течение 24 часов и предложим следующий шаг без навязывания.</p>
-            </div>
-            
-            <div class="card reveal">
-                <form name="glavnaya-forma" class="contact-form" method="post" data-netlify="true" action="/">
-                    <input type="hidden" name="form-name" value="glavnaya-forma" />
-                    <div class="form-row">
-                        <label for="name">Имя</label>
-                        <input id="name" name="name" type="text" placeholder="Ваше имя" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="tg">Telegram или e-mail</label>
-                        <input id="tg" name="contact" type="text" placeholder="@username или email" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="goal">Цель</label>
-                        <div class="select-wrapper">
-                            <select id="goal" name="service">
-                                <option value="Упаковка канала">Хочу упаковать канал</option>
-                                <option value="Посевы (реклама)">Нужны посевы</option>
-                                <option value="Web App/бот">Интересует Web App/бот</option>
-                                <option value="Аудит и план">Нужен аудит и план</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <label for="desc">Кратко о проекте</label>
-                        <textarea id="desc" name="comment" rows="4" placeholder="Ниша, гео, средний чек, текущие каналы..."></textarea>
-                    </div>
-                    <div class="form-row">
-                        <button class="button button-primary" type="submit">Получить план</button>
-                        <p class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой данных.</p>
-                    </div>
-                </form>
-            </div>
+<section id="contact" class="section">
+    <div class="container narrow">
+        <div class="section-head reveal">
+            <h2>Давайте начнём</h2>
+            <p class="muted">Оставьте контакты — пришлём вам план в течение 24 часов и предложим следующий шаг без навязывания.</p>
         </div>
-    </section>
+        
+        <div class="card reveal">
+            <form name="glavnaya-forma" class="contact-form" method="post" data-netlify="true" action="/">
+                <input type="hidden" name="form-name" value="glavnaya-forma" />
+                <div class="form-row">
+                    <label>Имя</label> 
+                    <input id="name" name="name" type="text" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-row">
+                    <label>Telegram или e-mail</label>
+                    <input id="tg" name="contact" type="text" placeholder="@username или email" required>
+                </div>
+                <div class="form-row">
+                    <label>Цель</label>
+                    <div class="select-wrapper">
+                        <select id="goal" name="service">
+                            <option value="Упаковка канала">Хочу упаковать канал</option>
+                            <option value="Посевы (реклама)">Нужны посевы</option>
+                            <option value="Web App/бот">Интересует Web App/бот</option>
+                            <option value="Аудит и план">Нужен аудит и план</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label>Кратко о проекте</label>
+                    <textarea id="desc" name="comment" rows="4" placeholder="Ниша, гео, средний чек, текущие каналы..."></textarea>
+                </div>
+                <div class="form-row">
+                    <button class="button button-primary" type="submit">Получить план</button>
+                    <p class="form-note">Нажимая кнопку, вы соглашаетесь с обработкой данных.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
   </main>
 
   <!-- ================= FOOTER ================= -->
