@@ -757,7 +757,6 @@ section.hero1 {
 /* --- Анимация градиента для модулей услуг --- */
 
 .service-module {
-    /* ... твои текущие стили ... */
     position: relative; /* Убедись, что это свойство есть */
     background-size: 100% 100%;
     background-position: 0 0;
@@ -1525,3 +1524,45 @@ section.hero1 {
     color: var(--primary);
 }
 
+/* ===============================================================
+   FIX FOR MOBILE ADAPTATION :: ARSENAL SWITCHER
+   =============================================================== */
+
+@media (max-width: 768px) {
+    /* --- Главный переключатель (Упаковка / Реклама / Web App) --- */
+    .arsenal-nav {
+        flex-wrap: wrap; 
+        gap: var(--sp-2); 
+    }
+
+    .arsenal-tab {
+        padding: var(--sp-2) var(--sp-3); 
+        font-size: 0.9rem; 
+    }
+
+    /* --- Карточка с широким контентом (TELEMETRIA 2.0) --- */
+    .tool-card.wide-card {
+        /* Теперь используем flexbox для вертикального расположения */
+        display: flex; /* Новая строка */
+        flex-direction: column; /* Элементы идут сверху вниз */
+        align-items: center; /* Центрируем по горизонтали */
+        gap: var(--sp-4);
+    }
+    
+    .tool-chart-container {
+        /* Убираем все границы и отступы, чтобы он выглядел как часть потока */
+        border: none; 
+        padding: 0;
+        
+        /* Гарантируем, что график будет по центру */
+        width: 100%; 
+        display: flex;
+        justify-content: center;
+        margin-top: var(--sp-4); /* Добавляем отступ сверху, чтобы отделить от текста */
+    }
+    /* Дополнительно, чтобы круглый график не был слишком большим */
+    .tool-chart-container .doughnut-chart {
+        width: 100px; /* Размер графика */
+        height: 100px;
+    }
+}    
